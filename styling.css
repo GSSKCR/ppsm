@@ -1,0 +1,125 @@
+/*styling.css*/
+body{
+    font: Arial, Helvetica, sans-serif;
+}
+
+#container {
+    width: 1050px;
+    margin: 0 auto;
+}
+
+#header{
+    height: 100px;
+    width: 1000px;
+    
+}
+
+#brand{
+    padding-top: 12px;
+    padding-left: 60px;
+    width: auto;
+}
+
+h1 a{
+    font-size: 30px; 
+    font-weight: 100;
+    color: #861BBF;
+    text-decoration: none;
+}
+
+.clear{
+    clear: both;   
+}
+
+#menu{
+    height: 70px;
+    border: 1px solid #000000;
+    background-color: #292F3C;
+    padding: 7px 0;
+}
+ul{
+    list-style: none;   
+}
+
+#menu ul li{
+    float: left;
+    padding: 0 80px;
+    height: 30px;
+    border-right: 1px solid #5d12e7;
+}
+
+#menu ul li:last-child{
+    border-right: none;   
+}
+
+#menu ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 17px;
+    color: #FFFFFF;
+    line-height: 30px;
+    -webkit-transition: font-size 0.3s ease;
+    -moz-transition: font-size 0.3s ease;
+    -o-transition: font-size 0.3s ease;
+    -ms-transition: font-size 0.3s ease;
+    transition: font-size 0.3s ease;
+}
+
+#menu ul li a:hover, #menu ul li a.active{
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+.sidebar{
+    height: 500px;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    padding: 30px 30p;
+}
+
+.sidebar h3{
+    color: #B314DB;
+    font-size: 30px;
+}
+
+.sidebar ul{
+    padding-top: 8px;   
+}
+#leftsidebar ul li{
+    padding: 10px 10px 20px 10px;
+}
+
+#rightsidebar ul li{
+   
+    padding: 17px 0 17px 70px;
+    background: url(images/tick.png) no-repeat left center;
+}
+.sidebar ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.sidebar ul li a:hover, .sidebar ul li a.active{
+    text-decoration: none;
+    color: #B314DB;
+    font-size: 23px;
+    font-weight: bold;
+    padding-left: -50px;
+}
+
+
+#leftsidebar{
+    float: left; 
+    margin-top: 20px;
+    background-color: #292F3C;
+    width: 230px;
+}
+
+#rightsidebar{
+    margin-top: 20px;
+    float: right;
+     width: 800px;
+    height: auto;
+}
+

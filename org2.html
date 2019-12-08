@@ -1,0 +1,80 @@
+<!--index.html-->
+<!DOCTYPE html>
+<html>
+    <head>
+        	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <meta charset="utf-8">
+        <title>Public problem solving management</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+        <link rel="stylesheet" href="styling.css">
+		<style>
+		#ta{
+	margin-top: 20px;
+    float: right;
+     width: 800px;
+    height: auto;
+}
+button{
+       float:right;
+	   position:relative;
+	   right:150px;
+	   top:20px;
+	   }
+</style>
+    </head>
+    
+    <body>
+        <div id="container">
+            <div id="header">
+                <div id="brand">
+                    <img src="40571ec8-b5d0-4211-ba6a-a770caa7ae3d.png" width="90px" height="90px" style="float: left">
+                    <h1 style="font-size:38px;">PUBLIC PROBLEM SOLVING MANAGEMENT</h1>
+                    
+                </div>
+               
+            </div>
+            <div id="menu">
+                <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">contact</a></li>
+                    <li><a href="logout.jsp">LOGOUT</a></li>
+                </ul>
+            </div>
+            
+            <div id="leftsidebar" class="sidebar">
+                <ul>
+                    <li><a href="index.html">WOMEN ORGANISATION</a></li>
+                    <li><a href="org2.html">serve needy voluntary organisation</a></li>
+                    <li><a href="org3.html">wildlife organisation</a></li>
+                    <li><a href="org4.html">service for poor</a></li>
+                    <li><a href="org5.html">the nest old age home</a></li>
+                    <li><a href="org6.html">organisation for education</a></li>
+                
+                </ul>
+            </div>
+            <div id="rightsidebar" class="sidebar">
+                 <h2>SERVE NEEDY VOLUNTARY ORGANISATION</h2>
+                <p> main objective is hunger-relief, provide permanent solution to orphans and underprivileged. 
+				Our noble thought is to provide food, clothing, shelter and education, to those needy, for whom such basics is a struggle.
+				Inspired by many humble hearts, we offer help whole heartedly to the needy.
+				Our goal is to serve unconditionally, express love and compassion to poor and needy.
+				We aim to help millions of such needy people.
+				We also want to make sure that our help genuinely reaches needy hands directly</p>
+                
+            </div>
+    			<div id="ta">
+				<%= session.getAttribute( "uid" ) %>
+                NAME:<input type="text" name="name"><br>
+                PNO:<input type="text" name="pno"><br>
+                ADDRESS:<input type="text" name="add"><br>
+<center><textarea rows="10" cols="70"   name="ta" >
+Enter text here...</textarea></center>
+</div>	
+  <button type="button" class="btn btn-success">SUBMIT</button>
+    </body>
+</html>
